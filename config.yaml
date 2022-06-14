@@ -1,0 +1,16 @@
+port: 8002
+pg_conn: "postgres:///credit?host=/var/run/postgresql&sslmode=disable"
+# pg_conn: "dbname=credit user=user password=password host=credit-db sslmode=disable"
+static_dir: "./web/dist"
+authsecret: "<secret>"
+service_file_location: "../credit-firebase.json"
+customers_page_size: 3
+items_page_size: 3
+invoices_page_size: 3
+payments_page_size: 3
+# docker network create credit-network
+# docker run --network credit-network --network-alias credit-db -p 5430:5432 -e POSTGRES_DB=credit -e POSTGRES_USER=user -e POSTGRES_PASSWORD=password postgres
+
+# service_file_location: "credit-firebase.json"
+# docker build --tag credit:1.0 .
+# docker run --network credit-network -p 8001:8001 credit:1.0 /credit
