@@ -1,6 +1,6 @@
 ## Case
 
-Is Go just a fluff!
+Is Go just a fluff?
 
 An additional setup to the populor Java Springboot choice for building microservice
 
