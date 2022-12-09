@@ -1,9 +1,9 @@
 port: 8002
-pg_conn: "postgres:///credit?host=/var/run/postgresql&sslmode=disable"
+pg_conn: "postgres:///template_app?host=/var/run/postgresql&sslmode=disable"
 # pg_conn: "dbname=credit user=user password=password host=credit-db sslmode=disable"
 static_dir: "./web/dist"
 authsecret: "<secret>"
-service_file_location: "../credit-firebase.json"
+service_file_location: "../template-app-go-react-firebase-adminsdk-8ju2l-a77df10039.json"
 customers_page_size: 3
 items_page_size: 3
 invoices_page_size: 3
