@@ -42,6 +42,8 @@ func listCustomers(page int, db model.Db, w http.ResponseWriter) {
 	var customersModel []model.Customer
 	if len(customers) > 0 {
 		customersModel = model.GetCustomersFromEntity(customers)
+	} else {
+		customersModel = make([]model.Customer, 0)
 	}
 
 	nextPage := 0
